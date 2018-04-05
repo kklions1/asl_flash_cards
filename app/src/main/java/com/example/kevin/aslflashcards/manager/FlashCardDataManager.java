@@ -28,11 +28,7 @@ public class FlashCardDataManager {
     public FlashCardDataManager(Context context) { this.context = context; }
 
     public void setConfiguration(UnitConfiguration configuration) { this.configuration = configuration; }
-
-    private String readJsonFromFile(Context context) {
-        return null;
-    }
-
+    
     public String fetchWordList() {
         String json = null;
         try {
