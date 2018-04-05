@@ -46,7 +46,7 @@ public class FlashCardDataManager {
         Gson gson = new Gson();
         JsonObject jsonObject = gson.fromJson(json, JsonObject.class);
 
-        JsonArray unitOneWords = jsonObject.getAsJsonArray("unit_1");
+        JsonArray unitOneWords = jsonObject.getAsJsonArray("unit_3");
         currentWordList = Lists.newArrayList();
 
         for (int i = 0; i < unitOneWords.size(); ++i) {
