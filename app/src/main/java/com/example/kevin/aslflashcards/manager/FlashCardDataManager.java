@@ -1,14 +1,12 @@
 package com.example.kevin.aslflashcards.manager;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.example.kevin.aslflashcards.R;
 import com.example.kevin.aslflashcards.configuration.UnitConfiguration;
 import com.google.common.collect.Lists;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import java.io.IOException;
@@ -32,7 +30,7 @@ public class FlashCardDataManager {
     public String fetchWordList() {
         String json = null;
         try {
-            InputStream inputStream = context.getResources().openRawResource(R.raw.unit_one);
+            InputStream inputStream = context.getResources().openRawResource(R.raw.word_list);
 
             int size = inputStream.available();
             byte[] buffer = new byte[size];
