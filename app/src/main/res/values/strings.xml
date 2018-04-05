@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ASL Flash Cards</string>
+
+    <!-- Card Display Strings -->
+    <string name="generate_cta">Generate</string>
+    <string name="generate_prompt_text">Click Generate To Start</string>
+    <string name="unit_one_text">Unit 1</string>
+    <string name="unit_two_text">Unit 2</string>
+    <string name="unit_three_text">Unit 3</string>
+</resources>
