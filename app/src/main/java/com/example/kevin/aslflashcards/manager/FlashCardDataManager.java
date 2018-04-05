@@ -28,7 +28,7 @@ public class FlashCardDataManager {
     public FlashCardDataManager(Context context) { this.context = context; }
 
     public void setConfiguration(UnitConfiguration configuration) { this.configuration = configuration; }
-    
+
     public String fetchWordList() {
         String json = null;
         try {
@@ -58,13 +58,15 @@ public class FlashCardDataManager {
         return json;
     }
 
-    public String getRandomWordFromList() throws IllegalStateException {
+    public String getRandomWordFromListAndRemoveFromList() {
         if (currentWordList.isEmpty()) {
-            throw new IllegalStateException("The word list is empty");
+            return "No Words Left in The List.";
         }
         Random numberGenerated = new Random();
         int randomNumber = numberGenerated.nextInt(currentWordList.size());
 
-        return currentWordList.get(randomNumber);
+        String selectedWord = currentWordList.get(randomNumber);
+        currentWordList.remove(randomNumber);
+        return selectedWord;
     }
 }

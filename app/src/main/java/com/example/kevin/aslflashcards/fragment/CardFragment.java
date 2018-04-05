@@ -56,7 +56,7 @@ public class CardFragment extends Fragment {
         super.onStart();
         Button generateButton = view.findViewById(R.id.generate_button);
         generateButton.setOnClickListener((view) -> {
-            String newWord = dataManager.getRandomWordFromList();
+            String newWord = dataManager.getRandomWordFromListAndRemoveFromList();
             TextView wordDisplay = this.view.findViewById(R.id.display_word);
             wordDisplay.setText(newWord);
         });
