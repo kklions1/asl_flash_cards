@@ -24,6 +24,14 @@
         android:text="@string/unit_three_text"
         android:textSize="20sp"/>
 
+
+    <CheckBox
+        android:id="@+id/unit_four_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_four_text"
+        android:textSize="20sp"/>
+
     <Button
         android:id="@+id/start_button"
         android:layout_width="match_parent"

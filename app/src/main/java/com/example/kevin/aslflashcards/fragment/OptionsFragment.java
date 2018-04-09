@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.RadioButton;
 
 import com.example.kevin.aslflashcards.R;
 import com.example.kevin.aslflashcards.configuration.UnitConfiguration;
@@ -22,9 +21,10 @@ public class OptionsFragment extends Fragment {
     private View view;
     private FlashCardDataManager dataManager;
 
-    private CheckBox unitOneRadio;
-    private CheckBox unitTwoRadio;
-    private CheckBox unitThreeRadio;
+    private CheckBox unitOneCheckBox;
+    private CheckBox unitTwoCheckBox;
+    private CheckBox unitThreeCheckBox;
+    private CheckBox unitFourCheckBox;
 
     public static OptionsFragment newInstance() {
         return new OptionsFragment();
@@ -38,9 +38,10 @@ public class OptionsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.options_layout, container, false);
-        unitOneRadio = view.findViewById(R.id.unit_one_radio);
-        unitTwoRadio = view.findViewById(R.id.unit_two_radio);
-        unitThreeRadio = view.findViewById(R.id.unit_three_radio);
+        unitOneCheckBox = view.findViewById(R.id.unit_one_radio);
+        unitTwoCheckBox = view.findViewById(R.id.unit_two_radio);
+        unitThreeCheckBox = view.findViewById(R.id.unit_three_radio);
+        unitFourCheckBox = view.findViewById(R.id.unit_four_radio);
         return view;
     }
 
@@ -64,15 +65,19 @@ public class OptionsFragment extends Fragment {
 
         startButton.setOnClickListener((view) -> {
             UnitConfiguration.Builder builder = new UnitConfiguration.Builder();
-            if (unitOneRadio.isChecked()) {
+            if (unitOneCheckBox.isChecked()) {
                 builder.unitOne();
             }
-            if (unitTwoRadio.isChecked()) {
+            if (unitTwoCheckBox.isChecked()) {
                 builder.unitTwo();
             }
 
-            if (unitThreeRadio.isChecked()) {
+            if (unitThreeCheckBox.isChecked()) {
                 builder.unitThree();
+            }
+
+            if (unitFourCheckBox.isChecked()) {
+                builder.unitFour();
             }
 
             dataManager.setConfiguration(builder.build());
