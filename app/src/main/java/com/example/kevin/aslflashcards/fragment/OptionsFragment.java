@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 
 import com.example.kevin.aslflashcards.R;
@@ -21,9 +22,9 @@ public class OptionsFragment extends Fragment {
     private View view;
     private FlashCardDataManager dataManager;
 
-    private RadioButton unitOneRadio;
-    private RadioButton unitTwoRadio;
-    private RadioButton unitThreeRadio;
+    private CheckBox unitOneRadio;
+    private CheckBox unitTwoRadio;
+    private CheckBox unitThreeRadio;
 
     public static OptionsFragment newInstance() {
         return new OptionsFragment();

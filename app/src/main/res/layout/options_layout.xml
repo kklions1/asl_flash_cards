@@ -3,21 +3,21 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/unit_one_radio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/unit_one_text"
         android:textSize="20sp"/>
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/unit_two_radio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/unit_two_text"
         android:textSize="20sp"/>
 
-    <RadioButton
+    <CheckBox
         android:id="@+id/unit_three_radio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
