@@ -46,12 +46,29 @@ public class FlashCardDataManager {
         Gson gson = new Gson();
         JsonObject jsonObject = gson.fromJson(json, JsonObject.class);
 
-        JsonArray unitOneWords = jsonObject.getAsJsonArray("unit_3");
         currentWordList = Lists.newArrayList();
 
-        for (int i = 0; i < unitOneWords.size(); ++i) {
-            currentWordList.add(unitOneWords.get(i).getAsString());
+
+        List<JsonArray> fetchedWords = Lists.newArrayList();
+        if (configuration.hasUnitOne()) {
+            fetchedWords.add(jsonObject.getAsJsonArray("unit_1"));
         }
+
+        if (configuration.hasUnitTwo()) {
+            fetchedWords.add(jsonObject.getAsJsonArray("unit_2"));
+        }
+
+        if (configuration.hasUnitThree()) {
+            fetchedWords.add(jsonObject.getAsJsonArray("unit_3"));
+        }
+
+        // TODO possibly refactor, may not be the most optimal solution
+        for (JsonArray array : fetchedWords) {
+            for (int i = 0; i < array.size(); ++i) {
+                currentWordList.add(array.get(i).getAsString());
+            }
+        }
+
 
         return json;
     }

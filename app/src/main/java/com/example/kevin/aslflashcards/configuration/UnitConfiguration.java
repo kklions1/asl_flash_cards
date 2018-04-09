@@ -14,6 +14,8 @@ public class UnitConfiguration {
 
     public boolean hasUnitTwo() { return unitTwo; }
 
+    public boolean hasUnitThree() { return unitThree; }
+
     public static class Builder {
         private boolean unitOne;
         private boolean unitTwo;

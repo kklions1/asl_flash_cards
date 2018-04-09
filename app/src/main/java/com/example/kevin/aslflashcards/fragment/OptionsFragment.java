@@ -74,8 +74,7 @@ public class OptionsFragment extends Fragment {
                 builder.unitThree();
             }
 
-            builder.build();
-
+            dataManager.setConfiguration(builder.build());
             dataManager.fetchWordList();
 
             try {
