@@ -48,7 +48,6 @@ public class FlashCardDataManager {
 
         currentWordList = Lists.newArrayList();
 
-
         List<JsonArray> fetchedWords = Lists.newArrayList();
         if (configuration.hasUnitOne()) {
             fetchedWords.add(jsonObject.getAsJsonArray("unit_1"));
@@ -72,7 +71,6 @@ public class FlashCardDataManager {
                 currentWordList.add(array.get(i).getAsString());
             }
         }
-
 
         return json;
     }
