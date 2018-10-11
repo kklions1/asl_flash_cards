@@ -10,6 +10,7 @@ public class UnitConfiguration {
     private boolean unitTwo;
     private boolean unitThree;
     private boolean unitFour;
+    private boolean unitFive;
 
     public boolean hasUnitOne() { return unitOne; }
 
@@ -19,11 +20,14 @@ public class UnitConfiguration {
 
     public boolean hasUnitFour() { return unitFour; }
 
+    public boolean hasUnitFive() { return unitFive; }
+
     public static class Builder {
         private boolean unitOne;
         private boolean unitTwo;
         private boolean unitThree;
         private boolean unitFour;
+        private boolean unitFive;
 
         public Builder unitOne() {
             this.unitOne = true;
@@ -45,12 +49,18 @@ public class UnitConfiguration {
             return this;
         }
 
+        public Builder unitFive() {
+            this.unitFive = true;
+            return this;
+        }
+
         public UnitConfiguration build() {
             UnitConfiguration configuration = new UnitConfiguration();
             configuration.unitOne = this.unitOne;
             configuration.unitTwo = this.unitTwo;
             configuration.unitThree = this.unitThree;
             configuration.unitFour = this.unitFour;
+            configuration.unitFive = this.unitFive;
             return configuration;
         }
     }
