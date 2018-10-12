@@ -69,6 +69,10 @@ public class FlashCardDataManager {
             fetchedWords.add(jsonObject.getAsJsonArray("unit_5"));
         }
 
+        if (configuration.hasUnitSix()) {
+            fetchedWords.add(jsonObject.getAsJsonArray("unit_6"));
+        }
+
         // TODO possibly refactor, may not be the most optimal solution
         for (JsonArray array : fetchedWords) {
             for (int i = 0; i < array.size(); ++i) {
