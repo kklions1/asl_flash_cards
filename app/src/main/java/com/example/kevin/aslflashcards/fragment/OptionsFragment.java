@@ -15,6 +15,7 @@ import com.example.kevin.aslflashcards.manager.FlashCardDataManager;
 
 /**
  * Created by kevin on 2/8/18.
+ * Unit 5 & 6 added by Devinn 10/11/18.
  */
 
 public class OptionsFragment extends Fragment {

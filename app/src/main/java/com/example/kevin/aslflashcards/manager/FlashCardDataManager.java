@@ -16,6 +16,7 @@ import java.util.Random;
 
 /**
  * Created by kevin on 3/1/18.
+ * Unit 5 & 6 added by Devinn 10/11/18.
  */
 
 public class FlashCardDataManager {
