@@ -16,6 +16,7 @@ import com.example.kevin.aslflashcards.manager.FlashCardDataManager;
 /**
  * Created by kevin on 2/8/18.
  * Unit 5 & 6 added by Devinn 10/11/18.
+ * Unit 7 & 8 added by Devinn 10/13/18
  */
 
 public class OptionsFragment extends Fragment {
@@ -28,6 +29,7 @@ public class OptionsFragment extends Fragment {
     private CheckBox unitFourCheckBox;
     private CheckBox unitFiveCheckBox;
     private CheckBox unitSixCheckBox;
+    private CheckBox unitSevenCheckBox;
 
     public static OptionsFragment newInstance() {
         return new OptionsFragment();
@@ -47,6 +49,7 @@ public class OptionsFragment extends Fragment {
         unitFourCheckBox = view.findViewById(R.id.unit_four_radio);
         unitFiveCheckBox = view.findViewById(R.id.unit_five_radio);
         unitSixCheckBox = view.findViewById(R.id.unit_six_radio);
+        unitSevenCheckBox = view.findViewById(R.id.unit_seven_radio);
         return view;
     }
 
@@ -91,6 +94,10 @@ public class OptionsFragment extends Fragment {
 
             if (unitSixCheckBox.isChecked()) {
                 builder.unitSix();
+            }
+
+            if (unitSevenCheckBox.isChecked()) {
+                builder.unitSeven();
             }
 
             dataManager.setConfiguration(builder.build());

@@ -51,6 +51,13 @@
             android:text="@string/unit_six_text"
             android:textSize="20sp" />
 
+        <CheckBox
+            android:id="@+id/unit_seven_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unit_seven_text"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <Button

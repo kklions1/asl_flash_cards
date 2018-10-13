@@ -3,6 +3,7 @@ package com.example.kevin.aslflashcards.configuration;
 /**
  * Created by kevin on 3/1/18.
  * Unit 5 & 6 added by Devinn 10/11/18.
+ * Unit 7 & 8 added by Devinn 10/13/18
  */
 
 public class UnitConfiguration {
@@ -13,6 +14,7 @@ public class UnitConfiguration {
     private boolean unitFour;
     private boolean unitFive;
     private boolean unitSix;
+    private boolean unitSeven;
 
     public boolean hasUnitOne() { return unitOne; }
 
@@ -26,6 +28,8 @@ public class UnitConfiguration {
 
     public boolean hasUnitSix() { return unitSix; }
 
+    public boolean hasUnitSeven() { return unitSeven; }
+
     public static class Builder {
         private boolean unitOne;
         private boolean unitTwo;
@@ -33,6 +37,7 @@ public class UnitConfiguration {
         private boolean unitFour;
         private boolean unitFive;
         private boolean unitSix;
+        private boolean unitSeven;
 
         public Builder unitOne() {
             this.unitOne = true;
@@ -64,6 +69,11 @@ public class UnitConfiguration {
             return this;
         }
 
+        public Builder unitSeven() {
+            this.unitSeven = true;
+            return this;
+        }
+
         public UnitConfiguration build() {
             UnitConfiguration configuration = new UnitConfiguration();
             configuration.unitOne = this.unitOne;
@@ -72,6 +82,7 @@ public class UnitConfiguration {
             configuration.unitFour = this.unitFour;
             configuration.unitFive = this.unitFive;
             configuration.unitSix = this.unitSix;
+            configuration.unitSeven = this.unitSeven;
             return configuration;
         }
     }

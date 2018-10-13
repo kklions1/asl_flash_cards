@@ -17,6 +17,7 @@ import java.util.Random;
 /**
  * Created by kevin on 3/1/18.
  * Unit 5 & 6 added by Devinn 10/11/18.
+ * Unit 7 & 8 added by Devinn 10/13/18
  */
 
 public class FlashCardDataManager {
@@ -72,6 +73,10 @@ public class FlashCardDataManager {
 
         if (configuration.hasUnitSix()) {
             fetchedWords.add(jsonObject.getAsJsonArray("unit_6"));
+        }
+
+        if (configuration.hasUnitSeven()) {
+            fetchedWords.add(jsonObject.getAsJsonArray("unit_7"));
         }
 
         // TODO possibly refactor, may not be the most optimal solution
