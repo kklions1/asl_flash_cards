@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Flash Cards</string>
+    <string name="load_cards">Load Flash Cards</string>
 
     <!-- Card Display Strings -->
     <string name="generate_cta">Generate</string>
