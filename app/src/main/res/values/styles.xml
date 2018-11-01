@@ -5,4 +5,12 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="MyDark" parent="android:Theme.Material.NoActionBar" >
+        <item name="android:colorAccent">@android:color/holo_green_dark</item>
+    </style>
+
+    <style name="MyLight" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:colorAccent">@android:color/holo_red_light</item>
+    </style>
+
 </resources>

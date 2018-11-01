@@ -11,7 +11,7 @@
         android:layout_weight="2"
         android:gravity="center"
         android:text="@string/generate_prompt_text"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="?android:attr/colorAccent"
         android:textSize="45sp"
         android:textStyle="bold" />
 
