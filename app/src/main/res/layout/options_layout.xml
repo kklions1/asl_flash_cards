@@ -9,7 +9,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="144dp"
         android:orientation="horizontal">
 
         <CheckBox
@@ -18,6 +18,15 @@
             android:layout_height="wrap_content"
             android:buttonTint="?android:attr/colorAccent"
             android:text="@string/unit_seven_text"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/unit_eight_radio"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="?android:attr/colorAccent"
+            android:checked="false"
+            android:text="@string/unit_eight_text"
             android:textSize="30sp" />
 
 
@@ -29,7 +38,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="106dp"
         android:orientation="horizontal">
 
         <CheckBox
@@ -58,7 +67,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="66dp"
         android:orientation="horizontal">
 
         <CheckBox
@@ -86,6 +95,8 @@
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="29dp"
         android:orientation="horizontal">
 
         <CheckBox
@@ -119,4 +130,5 @@
         android:layout_marginBottom="0dp"
         android:gravity="center"
         android:text="@string/load_cards" />
+
 </RelativeLayout>

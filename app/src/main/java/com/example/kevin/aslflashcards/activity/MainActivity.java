@@ -41,6 +41,4 @@ public class MainActivity extends Activity implements DataManagerAccessor, Optio
         transaction.addToBackStack(null);
         transaction.commit();
     }
-
-
 }

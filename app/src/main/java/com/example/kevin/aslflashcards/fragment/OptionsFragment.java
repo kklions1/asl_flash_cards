@@ -30,6 +30,7 @@ public class OptionsFragment extends Fragment {
     private CheckBox unitFiveCheckBox;
     private CheckBox unitSixCheckBox;
     private CheckBox unitSevenCheckBox;
+    private CheckBox unitEightCheckBox;
 
     public static OptionsFragment newInstance() {
         return new OptionsFragment();
@@ -50,6 +51,7 @@ public class OptionsFragment extends Fragment {
         unitFiveCheckBox = view.findViewById(R.id.unit_five_radio);
         unitSixCheckBox = view.findViewById(R.id.unit_six_radio);
         unitSevenCheckBox = view.findViewById(R.id.unit_seven_radio);
+        unitEightCheckBox = view.findViewById(R.id.unit_eight_radio);
         return view;
     }
 
@@ -98,6 +100,10 @@ public class OptionsFragment extends Fragment {
 
             if (unitSevenCheckBox.isChecked()) {
                 builder.unitSeven();
+            }
+
+            if (unitEightCheckBox.isChecked()) {
+                builder.unitEight();
             }
 
             dataManager.setConfiguration(builder.build());

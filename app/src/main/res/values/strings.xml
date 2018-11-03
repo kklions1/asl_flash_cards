@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Flash Cards</string>
     <string name="load_cards">Load Flash Cards</string>
+    <string name="load_settings">Settings</string>
+    <string name="theme_switch">Toggle Theme</string>
 
     <!-- Card Display Strings -->
     <string name="generate_cta">Generate</string>
@@ -12,5 +14,6 @@
     <string name="unit_five_text">Unit 5</string>
     <string name="unit_six_text">Unit 6</string>
     <string name="unit_seven_text">Unit 7</string>
+    <string name="unit_eight_text">Unit 8</string>
 
 </resources>
