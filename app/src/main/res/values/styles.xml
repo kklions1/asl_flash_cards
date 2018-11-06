@@ -9,8 +9,4 @@
         <item name="android:colorAccent">@android:color/holo_blue_dark</item>
     </style>
 
-    <style name="MyLight" parent="android:Theme.Material.Light.NoActionBar" >
-        <item name="android:colorAccent">@android:color/holo_red_dark</item>
-    </style>
-
 </resources>
